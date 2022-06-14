@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.background-image{
+    height: 100vh;
+    width: 100%;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url("background-image.jpg");
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.navbar{
+    width: 88%;
+    padding: 15px;
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+}
+.logo{
+    border-radius: 75px;
+    width: 70px;
+    color: white;
+    cursor: pointer;
+    z-index: 2;
+}
+.content{
+    width: 100%;
+    position: absolute;
+}
+.left-side{
+    color: white;
+    margin-left: 40px;
+    font-size: 40px;
+    margin-top: 450px;
+}
+.right-side{
+    float: right;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 350px;
+    right: 90px;
+}
+.right-side p{
+    color: white;
+    font-size: 18px;
+}
+#icon{
+    width: 80px;
+    cursor: pointer;
+}
