@@ -57,3 +57,21 @@
     width: 80px;
     cursor: pointer;
 }
+.nextSong{
+    float: right;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 430px;
+    right: 110px;
+    z-index: 6;
+}
+.nextSong p{
+    color: white;
+    font-size: 18px;
+    padding-right: 10px;
+}
+#nextButton{
+    width: 40px;
+    cursor: pointer;
+}
