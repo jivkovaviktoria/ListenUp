@@ -90,4 +90,10 @@ body{
     border: 2px solid white;
     background-color: transparent;
     border-radius: 50px;
+    z-index: 7;
+    cursor: pointer;
+}
+.musicPlayer button a{
+    text-decoration: none;
+    color: white;
 }
