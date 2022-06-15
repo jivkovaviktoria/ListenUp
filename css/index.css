@@ -79,3 +79,15 @@ body{
     width: 40px;
     cursor: pointer;
 }
+
+.musicPlayer button{
+    color: white;
+    position: absolute;
+    top: 30px;
+    right: 90px;
+    font-size: 25px;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 50px;
+}
