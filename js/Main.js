@@ -16,12 +16,15 @@ const songs = [
     "./Songs/Heaven.mp3",
     "./Songs/Perfect.mp3",
     "./Songs/Bryan-Adams-Everything-I-Do-I-Do-It-For-You.mp3",
+    "./Songs/NobodyButYou.mp3",
+    "./Songs/ForeverAfterAll.mp3",
+    "./Songs/DontSpeak.mp3",
     "./Songs/YouAreTheReason.mp3"];
 
 let i = 0;
 nextButton.onclick = function (){
     song.pause();
-    if(i>2)
+    if(i>songs.length-1)
     {
         i=0
     }
