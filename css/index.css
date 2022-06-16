@@ -97,3 +97,22 @@ body{
     text-decoration: none;
     color: white;
 }
+.previousSong{
+    float: right;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 480px;
+    right: 110px;
+    z-index: 6;
+}
+.previousSong p{
+    color: white;
+    font-size: 18px;
+    padding-right: 10px;
+}
+#prevButton{
+    transform: rotateY(180deg);
+    width: 40px;
+    cursor: pointer;
+}
