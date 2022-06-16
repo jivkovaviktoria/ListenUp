@@ -6,6 +6,7 @@
 body{
     background: url("../images/background-image.jpg");
     background-size: cover;
+    overflow: hidden;
 
 }
 .background-image{
