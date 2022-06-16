@@ -24,7 +24,6 @@ icon.onclick = function(){
         icon.src = "./images/play.png";
     }
 }
-
 nextButton.onclick = function (){
     song.pause();
     if(i==songs.length-1){
@@ -47,3 +46,11 @@ prevButton.onclick = function(){
     song.play();
 }
 
+function End(){
+    i++;
+    if(i>songs.length-1){
+        i=0;
+    }
+    song.src = songs[i];
+    song.play();
+}
