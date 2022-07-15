@@ -79,15 +79,15 @@ form.form1 {
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
 }
 
-.forgot {
+.forgot a{
     text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
-    color: #E1BEE7;
-    padding-top: 15px;
+    color: #dab6e0;
+    padding-top: 17px;
 }
 
 a {
     text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
-    color: #E1BEE7;
+
     text-decoration: none
 }
 .logo{
@@ -98,6 +98,12 @@ a {
     position: absolute;
     top: 10px;
     left: 10px;
+}
+
+.signup{
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    color: #714479;
+    padding-top: 5px;
 }
 
 @media (max-width: 600px) {
