@@ -79,11 +79,6 @@ form.form1 {
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
 }
 
-.forgot a{
-    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
-    color: #dab6e0;
-    padding-top: 17px;
-}
 
 a {
     text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
@@ -100,11 +95,6 @@ a {
     left: 10px;
 }
 
-.signup{
-    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
-    color: #c183cc;
-    padding-top: 5px;
-}
 
 @media (max-width: 600px) {
     .main {
