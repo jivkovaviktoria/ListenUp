@@ -6,35 +6,43 @@ let i = 0;
 const songs = [
     {
         songname: "Boulevard of broken dreams",
-        path: "./Songs/BoulevardofBrokenDreams.mp3"
+        path: "./Songs/BoulevardofBrokenDreams.mp3",
+        artist: "Green Day"
     },
     {
         songname: "Heaven",
-        path: "./Songs/Heaven.mp3"
+        path: "./Songs/Heaven.mp3",
+        artist: "Bryan Adams"
     },
     {
         songname: "Perfect",
-        path: "./Songs/Perfect.mp3"
+        path: "./Songs/Perfect.mp3",
+        artist: "Ed Sheeran"
     },
     {
         songname: "Everything I do",
-        path: "./Songs/Bryan-Adams-Everything-I-Do-I-Do-It-For-You.mp3"
+        path: "./Songs/Bryan-Adams-Everything-I-Do-I-Do-It-For-You.mp3",
+        artist: "Bryan Adams"
     },
     {
         songname: "Nobody but you",
-        path: "./Songs/NobodyButYou.mp3"
+        path: "./Songs/NobodyButYou.mp3",
+        artist: "Blake Shelton"
     },
     {
         songname: "Forever after all",
-        path: "./Songs/NobodyButYou.mp3"
+        path: "./Songs/ForeverAfterAll.mp3",
+        artist: "Luke Combs"
     },
     {
         songname: "Don't speak",
-        path: "./Songs/DontSpeak.mp3"
+        path: "./Songs/DontSpeak.mp3",
+        artist: "No Doubt"
     },
     {
         songname: "You are the reason",
-        path: "./Songs/YouAreTheReason.mp3"
+        path: "./Songs/YouAreTheReason.mp3",
+        artist: "Calum Scott"
     },
 ];
 
@@ -50,6 +58,7 @@ icon.onclick = function(){
         icon.src = "./images/play.png";
     }
     document.getElementById("name").innerHTML = songs[i].songname;
+    document.getElementById("artist").innerHTML = songs[i].artist;
 }
 nextButton.onclick = function (){
     song.pause();
@@ -61,6 +70,7 @@ nextButton.onclick = function (){
     icon.src = "./images/pause.png";
     song.play();
     document.getElementById("name").innerHTML = songs[i].songname;
+    document.getElementById("artist").innerHTML = songs[i].artist;
 }
 
 prevButton.onclick = function(){
@@ -73,6 +83,7 @@ prevButton.onclick = function(){
     icon.src = "./images/pause.png";
     song.play();
     document.getElementById("name").innerHTML = songs[i].songname;
+    document.getElementById("artist").innerHTML = songs[i].artist;
 }
 
 function End(){
@@ -83,6 +94,7 @@ function End(){
     song.src = songs[i].path;
     song.play();
     document.getElementById("name").innerHTML = songs[i].songname;
+    document.getElementById("artist").innerHTML = songs[i].artist;
 }
 
 
