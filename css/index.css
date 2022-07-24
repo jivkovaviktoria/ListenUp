@@ -5,6 +5,8 @@
 }
 body{
     background: url("../images/background-image.jpg");
+    background-position: center center;
+    background-attachment: fixed;
     background-size: cover;
     overflow: hidden;
 
@@ -28,8 +30,9 @@ body{
     align-items: center;
     justify-content: space-between;
     position: absolute;
+
 }
-.logo{
+.logo {
     border-radius: 75px;
     width: 70px;
     color: white;
@@ -41,7 +44,6 @@ body{
     position: absolute;
 }
 .left-side{
-    
     margin-left: 40px;
     font-size: 40px;
     margin-top: 450px;
@@ -78,6 +80,7 @@ body{
     color: white;
     font-size: 18px;
     padding-right: 10px;
+
 }
 #nextButton{
     width: 40px;
@@ -120,5 +123,35 @@ body{
     transform: rotateY(180deg);
     width: 40px;
     cursor: pointer;
+
 }
 
+@media screen and (max-width: 1100px){
+    .left-side{
+        font-size: 25px;
+        margin-top: 650px;
+    }
+    .musicPlayer button{
+        right: 20px;
+        top: 20px;
+    }
+    .right-side{
+        top: 100px;
+        right: 85px;
+    }
+    .previousSong {
+    top: 120px;
+        right: 170px;
+    }
+    .nextSong{
+        top: 120px;
+        right: 37px;
+    }
+
+    .right-side p,
+    .nextSong p,
+    .previousSong p{
+        display: none;
+    }
+
+}
