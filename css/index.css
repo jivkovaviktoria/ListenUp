@@ -46,6 +46,9 @@ body{
     font-size: 40px;
     margin-top: 450px;
 }
+.left-side h1{
+    color: white;
+}
 .right-side{
     float: right;
     display: flex;
@@ -118,3 +121,4 @@ body{
     width: 40px;
     cursor: pointer;
 }
+
