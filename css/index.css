@@ -125,7 +125,15 @@ body{
     cursor: pointer;
 
 }
-
+#name{
+    position: absolute;
+    top: 550px;
+    right: 110px;
+    color: #79418d;
+    font-family: "Segoe UI Light";
+    font-size: 30px;
+    align-items: center;
+}
 @media screen and (max-width: 1100px){
     .left-side{
         font-size: 25px;
