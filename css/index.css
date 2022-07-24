@@ -150,19 +150,29 @@ body{
     }
     .musicPlayer button{
         right: 20px;
-        top: 20px;
+        top: 10px;
     }
     .right-side{
-        top: 100px;
+        top: 75px;
         right: 85px;
     }
     .previousSong {
-    top: 120px;
+    top: 95px;
         right: 170px;
     }
     .nextSong{
-        top: 120px;
+        top: 95px;
         right: 37px;
+    }
+    #name{
+        top: 145px;
+        right: 37px;
+        font-size: 20px;
+    }
+    #artist{
+        top: 165px;
+        right: 37px;
+        font-size: 15px;
     }
 
     .right-side p,
@@ -170,5 +180,28 @@ body{
     .previousSong p{
         display: none;
     }
-
+}
+@media screen and (max-height: 815px){
+    .left-side{
+        font-size: 25px;
+        margin-top: 550px;
+    }
+}
+@media screen and (max-height: 700px){
+    .left-side{
+        font-size: 25px;
+        margin-top: 450px;
+    }
+}
+@media screen and (max-height: 620px){
+    .left-side{
+        font-size: 25px;
+        margin-top: 350px;
+    }
+}
+@media screen and (max-height: 450px){
+    .left-side{
+        font-size: 25px;
+        margin-top: 200px;
+    }
 }
