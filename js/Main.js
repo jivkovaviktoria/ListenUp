@@ -44,6 +44,26 @@ const songs = [
         path: "./Songs/YouAreTheReason.mp3",
         artist: "Calum Scott"
     },
+    {
+        songname: "Animal",
+        path: "./Songs/Animal.mp3",
+        artist: "Alvaro Soler"
+    },
+    {
+        songname: "ZITTI E BUONI",
+        path: "./Songs/ZittiEBuoni.mp3",
+        artist: "Maneskin"
+    },
+    {
+        songname: "Every breath you take",
+        path: "./Songs/EveryBreathYouTake.mp3",
+        artist: "The Police"
+    },
+    {
+        songname: "Breaking Me",
+        path: "./Songs/BreakingMe.mp3",
+        artist: "Topic ft. A7S"
+    }
 ];
 
 
