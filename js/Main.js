@@ -81,9 +81,9 @@ document.addEventListener('keyup', event => {
         icon.click();
     }
 })
+song.src = songs[i].path;
 icon.onclick = function(){
     if (song.paused) {
-        song.src = songs[i].path;
         song.play();
         icon.src = "./images/pause.png";
 
