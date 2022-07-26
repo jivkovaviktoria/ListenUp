@@ -9,7 +9,6 @@ body{
     background-attachment: fixed;
     background-size: cover;
     overflow: hidden;
-
 }
 .background-image{
     height: 100vh;
@@ -30,7 +29,6 @@ body{
     align-items: center;
     justify-content: space-between;
     position: absolute;
-
 }
 .logo {
     border-radius: 75px;
@@ -80,30 +78,10 @@ body{
     color: white;
     font-size: 18px;
     padding-right: 10px;
-
 }
 #nextButton{
     width: 40px;
     cursor: pointer;
-}
-
-.musicPlayer button{
-    color: white;
-    position: absolute;
-    top: 30px;
-    right: 210px;
-    font-size: 25px;
-    padding: 10px;
-    border: 2px solid white;
-    border-radius: 50px;
-    z-index: 7;
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.19);
-}
-.musicPlayer button a{
-    text-decoration: none;
-    color: white;
-
 }
 .previousSong{
     float: right;
