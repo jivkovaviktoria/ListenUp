@@ -6,7 +6,7 @@ let i = 0;
 const songs = [
     {
         songname: "Boulevard of broken dreams",
-        path: "./Songs/BoulevardofBrokenDreams.mp3",
+        path: "./Songs/BoulevardOfBrokenDreams.mp3",
         artist: "Green Day"
     },
     {
@@ -66,7 +66,21 @@ const songs = [
     }
 ];
 
-
+document.addEventListener('keydown', function(e) {
+    switch (e.keyCode) {
+        case 39:
+            nextButton.click();
+            break;
+        case 37:
+            prevButton.click();
+            break;
+    }
+});
+document.addEventListener('keyup', event => {
+    if (event.code === 'Space') {
+        icon.click();
+    }
+})
 icon.onclick = function(){
     if (song.paused) {
         song.src = songs[i].path;

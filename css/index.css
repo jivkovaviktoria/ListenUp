@@ -91,7 +91,7 @@ body{
     color: white;
     position: absolute;
     top: 30px;
-    right: 90px;
+    right: 210px;
     font-size: 25px;
     padding: 10px;
     border: 2px solid white;
@@ -199,8 +199,8 @@ body{
         margin-top: 350px;
     }
 }
-@media screen and (max-height: 450px){
-    .left-side{
+@media screen and (max-height: 450px) {
+    .left-side {
         font-size: 25px;
         margin-top: 200px;
     }
