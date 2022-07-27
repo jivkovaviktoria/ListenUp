@@ -65,7 +65,8 @@ const songs = [
         artist: "Topic ft. A7S"
     }
 ];
-
+let nextButton = document.getElementById('nextButton');
+let prevButton = document.getElementById('prevButton');
 document.addEventListener('keydown', function(e) {
     switch (e.keyCode) {
         case 39:
