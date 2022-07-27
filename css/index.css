@@ -4,8 +4,15 @@
     font-family: sans-serif;
 }
 body{
-    background: #383434;
+    background: url("../images/background-image.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
     overflow: hidden;
+}
+.background-image{
+    height: 100vh;
+    width: 100%;
 }
 .container{
     height: 100vh;
@@ -14,24 +21,23 @@ body{
     position: relative;
     z-index: 1;
 }
-.container p{
-    position: absolute;
-    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
-    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    top: 20px;
-    left: 25px;
-    font-size: 30px;
-    font-weight: bolder;
-}
 .navbar{
+    width: 88%;
+    padding: 15px;
+    margin-top: 2px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: absolute;
-    top: 0;
+    top: 15px;
 }
 .logo {
-    width: 120px;
+    width: 100px;
+}
+.logo {
+    border-radius: 75px;
+    width: 70px;
+>>>>>>> parent of dc93fd9 (Changed the design of the home page)
     color: white;
     cursor: pointer;
     z-index: 2;
@@ -41,16 +47,12 @@ body{
     position: absolute;
 }
 .left-side{
-    position: absolute;
-    top: -80px;
-    left: 20px;
+    margin-top: 465px;
+    margin-left: 40px;
+    font-size: 40px;
 }
 .left-side h1{
-    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
-    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 85px;
+    color: white;
 }
 .right-side{
     float: right;
@@ -58,15 +60,14 @@ body{
     align-items: center;
     position: absolute;
     top: 350px;
-    right: 100px;
+    right: 90px;
 }
-.right-side p1{
+.right-side p{
     color: white;
     font-size: 18px;
-    padding: 15px;
 }
 #icon{
-    width: 60px;
+    width: 80px;
     cursor: pointer;
 }
 .nextSong{
@@ -111,10 +112,7 @@ body{
     position: absolute;
     top: 550px;
     right: 110px;
-    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
-    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #79418d;
     font-family: "Segoe UI Light";
     font-size: 30px;
     align-items: center;
@@ -123,71 +121,72 @@ body{
     position: absolute;
     top: 585px;
     right: 110px;
-    color: #ffffff;
+    color: #b56bd0;
     font-family: "Segoe UI Light";
     font-size: 20px;
     align-items: center;
 }
 @media screen and (max-width: 1100px){
-    .navbar{
-        top: 15px;
-    }
     .left-side{
-        margin-top: 620px;
-    }
-    .left-side h1{
-        font-size: 65px;
+        font-size: 25px;
+        margin-top: 650px;
     }
     .right-side{
-        top: 105px;
-        right: 93px;
+        top: 75px;
+        right: 85px;
     }
     .previousSong {
-        top: 115px;
+    top: 95px;
         right: 170px;
     }
     .nextSong{
-        top: 115px;
+        top: 95px;
         right: 37px;
     }
     #name{
-        top: 170px;
+        top: 145px;
         right: 37px;
         font-size: 20px;
     }
     #artist{
-        top: 190px;
+        top: 165px;
         right: 37px;
         font-size: 15px;
     }
 
-    .right-side p1,
+    .right-side p,
     .nextSong p,
     .previousSong p{
         display: none;
     }
 }
-@media screen and (max-height: 815px){
+@media screen and (max-height: 800px){
+    .left-side{
+        font-size: 25px;
+        margin-top: 600px;
+    }
+}
+@media screen and (max-height: 765px){
     .left-side{
         font-size: 25px;
         margin-top: 550px;
     }
 }
-@media screen and (max-height: 700px){
+@media screen and (max-height: 715px){
     .left-side{
         font-size: 25px;
-        margin-top: 450px;
+        margin-top: 500px;
     }
 }
-@media screen and (max-height: 620px){
+@media screen and (max-height: 670px){
     .left-side{
         font-size: 25px;
-        margin-top: 350px;
+        margin-top: 475px;
     }
 }
 @media screen and (max-height: 450px) {
     .left-side {
         font-size: 25px;
-        margin-top: 200px;
+        margin-top: 100px;
     }
 }
