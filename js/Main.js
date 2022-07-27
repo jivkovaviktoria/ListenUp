@@ -21,7 +21,7 @@ const songs = [
     },
     {
         songname: "Everything I do",
-        path: "./Songs/Bryan-Adams-Everything-I-Do-I-Do-It-For-You.mp3",
+        path: "./Songs/EverythingIDo.mp3",
         artist: "Bryan Adams"
     },
     {
