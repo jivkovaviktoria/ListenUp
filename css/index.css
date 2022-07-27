@@ -14,24 +14,13 @@ body{
     position: relative;
     z-index: 1;
 }
-.container p{
-    position: absolute;
-    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
-    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    top: 20px;
-    left: 25px;
-    font-size: 30px;
-    font-weight: bolder;
-}
 .navbar{
     display: flex;
     position: absolute;
-    top: 0;
+    top: 15px;
 }
 .logo {
-    width: 120px;
+    width: 100px;
     color: white;
     cursor: pointer;
     z-index: 2;
@@ -41,9 +30,8 @@ body{
     position: absolute;
 }
 .left-side{
-    position: absolute;
-    top: -80px;
-    left: 20px;
+    margin-left: 25px;
+    margin-top: 465px;
 }
 .left-side h1{
     background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
@@ -167,27 +155,54 @@ body{
         display: none;
     }
 }
-@media screen and (max-height: 815px){
+@media screen and (max-height: 800px){
     .left-side{
         font-size: 25px;
-        margin-top: 550px;
+        margin-top: 430px;
     }
 }
 @media screen and (max-height: 700px){
     .left-side{
         font-size: 25px;
-        margin-top: 450px;
+        margin-top: 320px;
     }
 }
 @media screen and (max-height: 620px){
     .left-side{
         font-size: 25px;
-        margin-top: 350px;
+        margin-top: 170px;
+    }
+    .right-side{
+        top: 190px;
+        right: 93px;
+    }
+    .previousSong {
+        top: 205px;
+        right: 170px;
+    }
+    .nextSong{
+        top: 205px;
+        right: 37px;
+    }
+    #name{
+        top: 255px;
+        right: 37px;
+        font-size: 20px;
+    }
+    #artist{
+        top: 275px;
+        right: 37px;
+        font-size: 15px;
+    }
+    .right-side p1,
+    .nextSong p,
+    .previousSong p{
+        display: none;
     }
 }
 @media screen and (max-height: 450px) {
     .left-side {
         font-size: 25px;
-        margin-top: 200px;
+        margin-top: 100px;
     }
 }
