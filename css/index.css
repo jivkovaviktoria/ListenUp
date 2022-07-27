@@ -4,15 +4,8 @@
     font-family: sans-serif;
 }
 body{
-    background: url("../images/background-image.jpg");
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
+    background: #383434;
     overflow: hidden;
-}
-.background-image{
-    height: 100vh;
-    width: 100%;
 }
 .container{
     height: 100vh;
@@ -21,18 +14,24 @@ body{
     position: relative;
     z-index: 1;
 }
-.navbar{
-    width: 88%;
-    padding: 15px;
-    margin-top: 2px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.container p{
     position: absolute;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    top: 20px;
+    left: 25px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.navbar{
+    display: flex;
+    position: absolute;
+    top: 0;
 }
 .logo {
-    border-radius: 75px;
-    width: 70px;
+    width: 120px;
     color: white;
     cursor: pointer;
     z-index: 2;
@@ -42,12 +41,16 @@ body{
     position: absolute;
 }
 .left-side{
-    margin-left: 40px;
-    font-size: 40px;
-    margin-top: 450px;
+    position: absolute;
+    top: -80px;
+    left: 20px;
 }
 .left-side h1{
-    color: white;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 85px;
 }
 .right-side{
     float: right;
@@ -55,14 +58,15 @@ body{
     align-items: center;
     position: absolute;
     top: 350px;
-    right: 90px;
+    right: 100px;
 }
-.right-side p{
+.right-side p1{
     color: white;
     font-size: 18px;
+    padding: 15px;
 }
 #icon{
-    width: 80px;
+    width: 60px;
     cursor: pointer;
 }
 .nextSong{
@@ -107,7 +111,10 @@ body{
     position: absolute;
     top: 550px;
     right: 110px;
-    color: #79418d;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family: "Segoe UI Light";
     font-size: 30px;
     align-items: center;
@@ -116,39 +123,40 @@ body{
     position: absolute;
     top: 585px;
     right: 110px;
-    color: #b56bd0;
+    color: #ffffff;
     font-family: "Segoe UI Light";
     font-size: 20px;
     align-items: center;
 }
 @media screen and (max-width: 1100px){
-    .left-side{
-        font-size: 25px;
-        margin-top: 650px;
+    .navbar{
+        top: 15px;
     }
-    .musicPlayer button{
-        right: 20px;
-        top: 10px;
+    .left-side{
+        margin-top: 620px;
+    }
+    .left-side h1{
+        font-size: 65px;
     }
     .right-side{
-        top: 75px;
-        right: 85px;
+        top: 105px;
+        right: 93px;
     }
     .previousSong {
-    top: 95px;
+        top: 115px;
         right: 170px;
     }
     .nextSong{
-        top: 95px;
+        top: 115px;
         right: 37px;
     }
     #name{
-        top: 145px;
+        top: 170px;
         right: 37px;
         font-size: 20px;
     }
     #artist{
-        top: 165px;
+        top: 190px;
         right: 37px;
         font-size: 15px;
     }
