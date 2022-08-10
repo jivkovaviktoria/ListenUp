@@ -5,6 +5,16 @@ var name = document.getElementById("name");
 let i = 0;
 const songs = [
     {
+      songname: "Llamame",
+      path: "./Songs/Llamame.mp3",
+        artist: "WRS"
+    },
+    {
+        songname: "Waves",
+        path: "./Songs/Waves.mp3",
+        artist: "Mr. Probz"
+    },
+    {
         songname: "Boulevard of broken dreams",
         path: "./Songs/BoulevardOfBrokenDreams.mp3",
         artist: "Green Day"
@@ -149,5 +159,4 @@ function End(){
     document.getElementById("name").innerHTML = songs[i].songname;
     document.getElementById("artist").innerHTML = songs[i].artist;
 }
-
 
