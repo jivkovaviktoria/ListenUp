@@ -67,6 +67,8 @@ const songs = [
 ];
 let nextButton = document.getElementById('nextButton');
 let prevButton = document.getElementById('prevButton');
+let shuffleButton = document.getElementById('randomSong');
+
 document.addEventListener('keydown', function(e) {
     switch (e.keyCode) {
         case 39:
@@ -82,7 +84,9 @@ document.addEventListener('keyup', event => {
         icon.click();
     }
 })
+
 song.src = songs[i].path;
+
 icon.onclick = function(){
     if (song.paused) {
         song.play();
@@ -92,6 +96,7 @@ icon.onclick = function(){
         song.pause();
         icon.src = "./images/play.png";
     }
+
     document.getElementById("name").innerHTML = songs[i].songname;
     document.getElementById("artist").innerHTML = songs[i].artist;
 }
@@ -119,6 +124,19 @@ prevButton.onclick = function(){
     song.play();
     document.getElementById("name").innerHTML = songs[i].songname;
     document.getElementById("artist").innerHTML = songs[i].artist;
+}
+
+shuffleButton.onclick = function (){
+    song.pause();
+    i = Math.floor(Math.random() * songs.length-1);
+    song.src = songs[i].path;
+
+    song.play();
+    icon.src = "./images/pause.png";
+    
+    document.getElementById("name").innerHTML = songs[i].songname;
+    document.getElementById("artist").innerHTML = songs[i].artist;
+
 }
 
 function End(){
