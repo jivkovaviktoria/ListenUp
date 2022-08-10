@@ -133,7 +133,7 @@ shuffleButton.onclick = function (){
 
     song.play();
     icon.src = "./images/pause.png";
-    
+
     document.getElementById("name").innerHTML = songs[i].songname;
     document.getElementById("artist").innerHTML = songs[i].artist;
 
