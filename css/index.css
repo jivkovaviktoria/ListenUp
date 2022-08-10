@@ -87,6 +87,24 @@ body{
     width: 40px;
     cursor: pointer;
 }
+.randomSong{
+    float: right;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 520px;
+    right: 88px;
+    z-index: 6;
+}
+.randomSong p{
+    color: white;
+    font-size: 18px;
+    margin-right: -13px;
+}
+#randomSong{
+    width: 85px;
+    cursor: pointer;
+}
 .previousSong{
     float: right;
     display: flex;
@@ -109,7 +127,7 @@ body{
 }
 #name{
     position: absolute;
-    top: 550px;
+    top: 575px;
     right: 110px;
     color: #79418d;
     font-family: "Segoe UI Light";
@@ -118,7 +136,7 @@ body{
 }
 #artist{
     position: absolute;
-    top: 585px;
+    top: 610px;
     right: 110px;
     color: #b56bd0;
     font-family: "Segoe UI Light";
