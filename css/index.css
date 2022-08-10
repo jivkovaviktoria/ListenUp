@@ -4,7 +4,7 @@
     font-family: sans-serif;
 }
 body{
-    background: url("../images/background-image.jpg");
+    background: url("/images/background-image.jpg");
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
@@ -37,7 +37,6 @@ body{
 .logo {
     border-radius: 75px;
     width: 70px;
->>>>>>> parent of dc93fd9 (Changed the design of the home page)
     color: white;
     cursor: pointer;
     z-index: 2;
