@@ -4,7 +4,7 @@
     font-family: sans-serif;
 }
 body{
-    background: url("/background-image.jpg");
+    background: url("../background-image.jpg");
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
