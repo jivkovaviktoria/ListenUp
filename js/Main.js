@@ -75,9 +75,11 @@ const songs = [
         artist: "Topic ft. A7S"
     }
 ];
+
 let nextButton = document.getElementById('nextButton');
 let prevButton = document.getElementById('prevButton');
 let shuffleButton = document.getElementById('randomSong');
+
 
 document.addEventListener('keydown', function(e) {
     switch (e.keyCode) {
@@ -159,4 +161,3 @@ function End(){
     document.getElementById("name").innerHTML = songs[i].songname;
     document.getElementById("artist").innerHTML = songs[i].artist;
 }
-
