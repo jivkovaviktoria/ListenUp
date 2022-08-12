@@ -1,4 +1,6 @@
 Listen UP
 https://jivkovaviktoria.github.io/ListenUp/
 
-![image](https://user-images.githubusercontent.com/85957657/181009981-88343145-a7e7-44b3-b4bc-1dfcd4aef0b8.png)
+![image](https://user-images.githubusercontent.com/85957657/184369508-79285c2a-55a2-446e-ba45-4218e65a3459.png)
+![image](https://user-images.githubusercontent.com/85957657/184369584-5e29ffb7-48d4-46ed-afa6-77289e710d90.png)
+
