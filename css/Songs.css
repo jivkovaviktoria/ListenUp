@@ -1,0 +1,8 @@
+body{
+    background-color: pink;
+}
+#list li{
+    cursor: pointer;
+    list-style-type: none;
+    font-family: "Segoe UI Light";
+}
