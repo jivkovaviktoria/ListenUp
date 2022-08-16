@@ -88,13 +88,14 @@ const songs = [
 
 let song = document.getElementById("song");
 
-let ul = document.getElementById('list');  // Parent
-
-
+let ul = document.getElementById('list');
 
 for (let i = 0; i < songs.length; i++){
 
-    let li = document.getElementById(`${i}`);
+    let li = document.createElement('li');
+    ul.appendChild(li);
+    li.setAttribute("id", `${i}`);
+
     let image = document.createElement('img');
     image.id = songs[i].songname;
     image.classList.add("songimage");
