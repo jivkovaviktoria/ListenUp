@@ -23,7 +23,11 @@ body{
 .animate{
     -webkit-animation: infinite-spinning 5s infinite linear;
 }
-
+#icon{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
 @-webkit-keyframes infinite-spinning {
     from {
         -webkit-transform: rotate(0deg);

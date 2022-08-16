@@ -106,18 +106,33 @@ for (let i = 0; i < songs.length; i++){
     li.appendChild(image);
 }
 
+song.src = songs[0].path;
+
 ul.addEventListener('click', function(e) {
 
     let id = e.target.id;
+    let songImage = document.getElementById(songs[id].songname);
     song.src = songs[id].path;
+    icon.src = "../images/pause.png";
     song.play();
+
+    icon.onclick = function(){
+        if (song.paused) {
+            song.play();
+            songImage.classList.add("animate");
+            icon.src = "../images/pause.png";
+
+        } else {
+            song.pause();
+            songImage.classList.remove("animate");
+            icon.src = "../images/play.png";
+        }
+    }
 
     if(document.querySelector('.animate') !== null){
         document.querySelector('.animate').classList.remove("animate");
     }
 
-    let songImage = document.getElementById(songs[id].songname);
     songImage.classList.add("animate");
-
 });
 
