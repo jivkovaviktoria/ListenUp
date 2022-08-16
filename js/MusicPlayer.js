@@ -45,7 +45,7 @@ const songs = [
         songname: "Forever after all",
         path: "/Songs/ForeverAfterAll.mp3",
         artist: "Luke Combs",
-        photo: "../images/foreverAfterALl.jpg"
+        photo: "../images/foreverAfterAll.jpg"
     },
     {
         songname: "Don't speak",
