@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(90deg, #2F1C53, #A46DFF, #F6D1FD);
+    background: linear-gradient(90deg, #812a7d, #A46DFF, #F6D1FD);
     background-size: cover;
 }
 #list{
@@ -19,14 +19,54 @@ body{
     border-radius: 50%;
     margin:25px 35px;
 }
-
 .animate{
     -webkit-animation: infinite-spinning 5s infinite linear;
+}
+.paused{
+    -webkit-animation-play-state: paused !important;
+    -moz-animation-play-state: paused !important;
+    -o-animation-play-state: paused !important;
+    animation-play-state: paused !important;
 }
 #icon{
     position: absolute;
     right: 25px;
     top: 25px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown span{
+    color: white;
+    font-family: "Segoe UI Light";
+    background-color: #A46DFF;
+    padding: 15px;
+    margin-left: 105px;
+    border-bottom-right-radius: 35%;
+    border-bottom-left-radius: 35%;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #a46dff;
+    color: white;
+    font-family: "Segoe UI Light";
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    margin-left: 105px;
+    width: 101px;
+    z-index: 1;
+}
+.dropdown-content p{
+    padding: 3px 10px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content p:hover {
+    background-color: rgba(86, 80, 80, 0.3);
+    cursor: pointer;
 }
 @-webkit-keyframes infinite-spinning {
     from {
