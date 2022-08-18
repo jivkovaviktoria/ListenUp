@@ -87,7 +87,6 @@ const songs = [
 
 
 let song = document.getElementById("song");
-
 let ul = document.getElementById('list');
 
 for (let i = 0; i < songs.length; i++){
@@ -127,6 +126,8 @@ ul.addEventListener('click', function(e) {
             songImage.classList.remove("animate");
             icon.src = "../images/play.png";
         }
+
+
     }
 
     if(document.querySelector('.animate') !== null){
@@ -136,3 +137,14 @@ ul.addEventListener('click', function(e) {
     songImage.classList.add("animate");
 });
 
+document.addEventListener('keyup', event => {
+    if (event.code === 'Space') {
+        icon.click();
+    }
+});
+
+window.addEventListener('keydown', function(e) {
+    if(e.keyCode == 32 && e.target == document.body) {
+        e.preventDefault();
+    }
+});
