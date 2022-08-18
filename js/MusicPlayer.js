@@ -145,14 +145,14 @@ document.addEventListener('keyup', event => {
 });
 
 window.addEventListener('keydown', function(e) {
-    if(e.keyCode == 32 && e.target == document.body) {
+    if(e.keyCode === 32 && e.target === document.body) {
         e.preventDefault();
     }
 });
 
 function search() {
     let input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById('myInput');
+    input = document.getElementById('input');
     filter = input.value.toUpperCase();
     ul = document.getElementById("list");
     li = ul.getElementsByTagName('li');
