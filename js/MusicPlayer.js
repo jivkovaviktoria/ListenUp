@@ -85,7 +85,7 @@ const songs = [
     }
 ];
 
-
+let currentID;
 let song = document.getElementById("song");
 let ul = document.getElementById('list');
 
@@ -110,32 +110,33 @@ song.src = songs[0].path;
 ul.addEventListener('click', function(e) {
 
     let id = e.target.id;
+    currentID = id;
     let songImage = document.getElementById(songs[id].songname);
     song.src = songs[id].path;
     icon.src = "../images/pause.png";
     song.play();
-
-    icon.onclick = function(){
-        if (song.paused) {
-            song.play();
-            songImage.classList.add("animate");
-            icon.src = "../images/pause.png";
-
-        } else {
-            song.pause();
-            songImage.classList.remove("animate");
-            icon.src = "../images/play.png";
-        }
-
-
-    }
 
     if(document.querySelector('.animate') !== null){
         document.querySelector('.animate').classList.remove("animate");
     }
 
     songImage.classList.add("animate");
+    songImage.style.animationPlayState = 'running';
 });
+
+icon.onclick = function(){
+    let image = document.getElementById(songs[currentID].songname);
+    if (song.paused) {
+        song.play();
+        image.style.animationPlayState = 'running';
+        icon.src = "../images/pause.png";
+
+    } else {
+        song.pause();
+        image.style.animationPlayState = 'paused';
+        icon.src = "../images/play.png";
+    }
+}
 
 document.addEventListener('keyup', event => {
     if (event.code === 'Space') {

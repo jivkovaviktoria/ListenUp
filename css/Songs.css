@@ -21,12 +21,7 @@ body{
 }
 .animate{
     -webkit-animation: infinite-spinning 5s infinite linear;
-}
-.paused{
-    -webkit-animation-play-state: paused !important;
-    -moz-animation-play-state: paused !important;
-    -o-animation-play-state: paused !important;
-    animation-play-state: paused !important;
+    animation-play-state: paused;
 }
 #icon{
     position: absolute;
