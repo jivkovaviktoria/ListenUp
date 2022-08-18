@@ -71,3 +71,20 @@ body{
         -webkit-transform: rotate(360deg);
     }
 }
+
+#myInput{
+    font-size: 16px;
+    border-radius: 50px;
+    border: rgba(255, 255, 255, 0.29);
+    background-color: rgba(255, 255, 255, 0.29);
+    outline: none;
+    caret-color: white;
+    position: absolute;
+    margin: 5px 25px;
+    width: 320px;
+    height: 30px;
+    color: white;
+}
+::placeholder{
+    color: white;
+}

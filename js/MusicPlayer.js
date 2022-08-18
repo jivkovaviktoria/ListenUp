@@ -149,3 +149,20 @@ window.addEventListener('keydown', function(e) {
         e.preventDefault();
     }
 });
+
+function search() {
+    let input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById('myInput');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("list");
+    li = ul.getElementsByTagName('li');
+
+    for (i = 0; i < li.length; i++) {
+        txtValue = li[i].innerHTML;
+        if (txtValue.toUpperCase().indexOf(filter) === 0) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
