@@ -12,6 +12,7 @@ body{
     font-family: "Segoe UI Light";
     color: white;
     margin-bottom: 50px;
+    font-size: 12px;
 }
 #list li img{
     width: 60px;
@@ -20,6 +21,9 @@ body{
     border-radius: 50%;
     margin-left: 35px;
     margin-top: -25px;
+}
+#list li:first-line{
+    font-size: 20px;
 }
 .animate{
     -webkit-animation: infinite-spinning 5s infinite linear;
@@ -81,7 +85,7 @@ body{
     outline: none;
     caret-color: white;
     position: absolute;
-    margin: 5px 25px;
+    margin: 1px 25px;
     width: 320px;
     height: 30px;
     color: white;
