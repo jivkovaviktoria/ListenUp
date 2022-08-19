@@ -117,13 +117,15 @@ for (let i = 0; i < songs.length; i++){
 
     li.appendChild(image);
 }
-
+let index;
 song.src = songs[0].path;
+index = 0;
 
 ul.addEventListener('click', function(e) {
 
     let id = e.target.id;
     currentID = id;
+    index = id;
     let songImage = document.getElementById(songs[id].songname);
     song.src = songs[id].path;
     icon.src = "../images/pause.png";
@@ -208,4 +210,12 @@ function loadAll(){
     for(let i = 0; i < elements.length; i++){
         elements[i].style.display = '';
     }
+}
+
+function End(){
+    if(index>songs.length-1){
+        index=0;
+    }
+    song.src = songs[index].path;
+    song.play();
 }
