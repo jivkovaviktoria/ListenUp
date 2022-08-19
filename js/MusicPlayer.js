@@ -3,85 +3,99 @@ const songs = [
         songname: "Llamame",
         path: "/Songs/Llamame.mp3",
         artist: "WRS",
-        photo: "../images/llamame.webp"
+        photo: "../images/llamame.webp",
+        genre: "electronic"
     },
     {
         songname: "Waves",
         path: "/Songs/Waves.mp3",
         artist: "Mr. Probz",
-        photo: "../images/waves.jpg"
+        photo: "../images/waves.jpg",
+        genre: "r&b"
     },
     {
         songname: "Boulevard of broken dreams",
         path: "/Songs/BoulevardOfBrokenDreams.mp3",
         artist: "Green Day",
-        photo: "../images/boulevardOfBrokenDreams.jpg"
+        photo: "../images/boulevardOfBrokenDreams.jpg",
+        genre: "rock"
     },
     {
         songname: "Heaven",
         path: "/Songs/Heaven.mp3",
         artist: "Bryan Adams",
-        photo: "../images/heaven.jpg"
+        photo: "../images/heaven.jpg",
+        genre: "pop"
     },
     {
         songname: "Perfect",
         path: "/Songs/Perfect.mp3",
         artist: "Ed Sheeran",
-        photo: "../images/perfect.jpg"
+        photo: "../images/perfect.jpg",
+        genre: "pop"
     },
     {
         songname: "Everything I do",
         path: "/Songs/EverythingIDo.mp3",
         artist: "Bryan Adams",
-        photo: "../images/everythingIdo.jpg"
+        photo: "../images/everythingIdo.jpg",
+        genre: "pop"
     },
     {
         songname: "Nobody but you",
         path: "/Songs/NobodyButYou.mp3",
         artist: "Blake Shelton",
-        photo: "../images/nobodyButYou.jpg"
+        photo: "../images/nobodyButYou.jpg",
+        genre: "pop"
     },
     {
         songname: "Forever after all",
         path: "/Songs/ForeverAfterAll.mp3",
         artist: "Luke Combs",
-        photo: "../images/foreverAfterAll.jpg"
+        photo: "../images/foreverAfterAll.jpg",
+        genre: "pop"
     },
     {
         songname: "Don't speak",
         path: "/Songs/DontSpeak.mp3",
         artist: "No Doubt",
-        photo: "../images/dontSPeak.jpg"
+        photo: "../images/dontSPeak.jpg",
+        genre: "pop"
     },
     {
         songname: "You are the reason",
         path: "/Songs/YouAreTheReason.mp3",
         artist: "Calum Scott",
-        photo: "../images/youAreTheReason.jpg"
+        photo: "../images/youAreTheReason.jpg",
+        genre: "pop"
     },
     {
         songname: "Animal",
         path: "/Songs/Animal.mp3",
         artist: "Alvaro Soler",
-        photo: "../images/animal.jpg"
+        photo: "../images/animal.jpg",
+        genre: "pop"
     },
     {
         songname: "ZITTI E BUONI",
         path: "/Songs/ZittiEBuoni.mp3",
         artist: "Maneskin",
-        photo: "../images/zittiebuoni.jpg"
+        photo: "../images/zittiebuoni.jpg",
+        genre: "rock"
     },
     {
         songname: "Every breath you take",
         path: "/Songs/EveryBreathYouTake.mp3",
         artist: "The Police",
-        photo: "../images/everyBreathYouTake.jpg"
+        photo: "../images/everyBreathYouTake.jpg",
+        genre: "rock"
     },
     {
         songname: "Breaking Me",
         path: "/Songs/BreakingMe.mp3",
         artist: "Topic ft. A7S",
-        photo: "../images/breakingMe.png"
+        photo: "../images/breakingMe.png",
+        genre: "electronic"
     }
 ];
 
@@ -94,7 +108,7 @@ for (let i = 0; i < songs.length; i++){
     let li = document.createElement('li');
     ul.appendChild(li);
     li.setAttribute("id", `${i}`);
-
+    li.setAttribute("class", songs[i].genre);
     let image = document.createElement('img');
     image.id = songs[i].songname;
     image.classList.add("songimage");
@@ -164,5 +178,35 @@ function search() {
         } else {
             li[i].style.display = "none";
         }
+    }
+}
+
+function filterSelection(x){
+    song.pause();
+    icon.src = "../images/play.png";
+    for(let i = 0; i < songs.length; i++){
+
+        let thisElement = document.getElementById(songs[i].songname).parentElement;
+
+        if(songs[i].genre !== x){
+            thisElement.style.display = 'none';
+        }
+        else thisElement.style.display = '';
+    }
+
+    for(let i = 0; i < songs.length; i++){
+        if(songs[i].genre === x){
+            song.src = songs[i].path;
+            break;
+        }
+    }
+}
+
+function loadAll(){
+    song.pause();
+    icon.src = "../images/play.png";
+    let elements = document.getElementsByTagName('li');
+    for(let i = 0; i < elements.length; i++){
+        elements[i].style.display = '';
     }
 }
