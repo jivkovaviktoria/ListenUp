@@ -112,8 +112,7 @@ for (let i = 0; i < songs.length; i++){
     let image = document.createElement('img');
     image.id = songs[i].songname;
     image.classList.add("songimage");
-    li.innerHTML = songs[i].songname;
-
+    li.innerHTML = songs[i].songname + '<br>' + songs[i].artist;
     image.src = songs[i].photo;
 
     li.appendChild(image);
