@@ -143,20 +143,15 @@ body{
     font-size: 20px;
     align-items: center;
 }
-
-#allsongs{
+.gg-list{
     cursor: pointer;
-    text-decoration: none;
+    --ggs: 2;
     color: white;
-    font-family: "Segoe UI Light";
-    font-size: 25px;
-    font-weight: bolder;
     position: absolute;
-    right: 90px;
-    top: 35px;
-    z-index: 15;
+    margin-top: -720px;
+    margin-left: 1412px;
+    z-index: 500;
 }
-
 @media screen and (max-width: 1100px){
     .left-side{
         font-size: 25px;
