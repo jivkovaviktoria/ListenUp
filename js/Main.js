@@ -73,6 +73,11 @@ const songs = [
         songname: "Breaking Me",
         path: "./Songs/BreakingMe.mp3",
         artist: "Topic ft. A7S"
+    },
+    {
+        songname: "Don't",
+        path: '/Songs/Don\'t',
+        artist: "Ed Sheeran"
     }
 ];
 

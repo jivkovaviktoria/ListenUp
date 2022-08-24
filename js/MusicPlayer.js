@@ -96,6 +96,13 @@ const songs = [
         artist: "Topic ft. A7S",
         photo: "../images/breakingMe.png",
         genre: "electronic"
+    },
+    {
+        songname: "Don't",
+        path: "/Songs/Don't.mp3",
+        artist: "Ed Sheeran",
+        photo: "../images/Don't.png",
+        genre: "pop"
     }
 ];
 
@@ -219,3 +226,4 @@ function End(){
     song.src = songs[index].path;
     song.play();
 }
+
