@@ -1,56 +1,56 @@
 const songs = [
     {
         songname: "Llamame",
-        path: "/Songs/Llamame.mp3",
+        path: "../Songs/Llamame.mp3",
         artist: "WRS",
         photo: "../images/llamame.webp",
         genre: "electronic"
     },
     {
         songname: "Waves",
-        path: "/Songs/Waves.mp3",
+        path: "../Songs/Waves.mp3",
         artist: "Mr. Probz",
         photo: "../images/waves.jpg",
         genre: "r&b"
     },
     {
         songname: "Boulevard of broken dreams",
-        path: "/Songs/BoulevardOfBrokenDreams.mp3",
+        path: "../Songs/BoulevardOfBrokenDreams.mp3",
         artist: "Green Day",
         photo: "../images/boulevardOfBrokenDreams.jpg",
         genre: "rock"
     },
     {
         songname: "Heaven",
-        path: "/Songs/Heaven.mp3",
+        path: "../Songs/Heaven.mp3",
         artist: "Bryan Adams",
         photo: "../images/heaven.jpg",
         genre: "pop"
     },
     {
         songname: "Perfect",
-        path: "/Songs/Perfect.mp3",
+        path: "../Songs/Perfect.mp3",
         artist: "Ed Sheeran",
         photo: "../images/perfect.jpg",
         genre: "pop"
     },
     {
         songname: "Everything I do",
-        path: "/Songs/EverythingIDo.mp3",
+        path: "../Songs/EverythingIDo.mp3",
         artist: "Bryan Adams",
         photo: "../images/everythingIdo.jpg",
         genre: "pop"
     },
     {
         songname: "Nobody but you",
-        path: "/Songs/NobodyButYou.mp3",
+        path: "../Songs/NobodyButYou.mp3",
         artist: "Blake Shelton",
         photo: "../images/nobodyButYou.jpg",
         genre: "pop"
     },
     {
         songname: "Forever after all",
-        path: "/Songs/ForeverAfterAll.mp3",
+        path: "../Songs/ForeverAfterAll.mp3",
         artist: "Luke Combs",
         photo: "../images/foreverAfterAll.jpg",
         genre: "pop"
@@ -64,14 +64,14 @@ const songs = [
     },
     {
         songname: "You are the reason",
-        path: "/Songs/YouAreTheReason.mp3",
+        path: "../Songs/YouAreTheReason.mp3",
         artist: "Calum Scott",
         photo: "../images/youAreTheReason.jpg",
         genre: "pop"
     },
     {
         songname: "Animal",
-        path: "/Songs/Animal.mp3",
+        path: "../Songs/Animal.mp3",
         artist: "Alvaro Soler",
         photo: "../images/animal.jpg",
         genre: "pop"
@@ -85,21 +85,21 @@ const songs = [
     },
     {
         songname: "Every breath you take",
-        path: "/Songs/EveryBreathYouTake.mp3",
+        path: "../Songs/EveryBreathYouTake.mp3",
         artist: "The Police",
         photo: "../images/everyBreathYouTake.jpg",
         genre: "rock"
     },
     {
         songname: "Breaking Me",
-        path: "/Songs/BreakingMe.mp3",
+        path: "../Songs/BreakingMe.mp3",
         artist: "Topic ft. A7S",
         photo: "../images/breakingMe.png",
         genre: "electronic"
     },
     {
         songname: "Don't",
-        path: "/Songs/Don't.mp3",
+        path: "../Songs/Don't.mp3",
         artist: "Ed Sheeran",
         photo: "../images/Don't.png",
         genre: "pop"
