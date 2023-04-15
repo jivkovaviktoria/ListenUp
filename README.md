@@ -1,4 +1,4 @@
-# [ListenUp](https://jivkovaviktoria.github.io/ListenUp/Pages/ListOfSongs.html)
+# [ListenUp](https://jivkovaviktoria.github.io/ListenUp/index.html)
 
 A simple music player project that allows you to play songs, navigate between them, and filter them by category or search for a particular song.
 
