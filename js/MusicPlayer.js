@@ -146,6 +146,7 @@ ul.addEventListener('click', function(e) {
     songImage.style.animationPlayState = 'running';
 });
 
+let icon = document.getElementById('icon');
 icon.onclick = function(){
     let image = document.getElementById(songs[currentID].songname);
     if (song.paused) {
